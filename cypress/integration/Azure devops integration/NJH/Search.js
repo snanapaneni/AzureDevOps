@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('My Osler Test Suite', function() 
+describe('My NJH Test Suite', function() 
 {
 
     
@@ -11,7 +11,7 @@ describe('My Osler Test Suite', function()
       })
       
       it('fails to visit website 1', function () {
-        cy.visit("https://www.osler.com/en/home")
+        cy.visit("https://njhmvc-qa.reasononeinc.com")
 
         cy.wait(2000)
 
@@ -26,24 +26,23 @@ describe('My Osler Test Suite', function()
 // set viewport to 810px X 1080px (iPad7th)
        //cy.viewport(810, 1080)
 
-//assert if main nav has Team and Expertise
+//assert if main logo is displayed
 
-cy.get('#p_lt_ctl05_PrimaryNavigation_rptItems_ctl00_lnkMenu').contains('Team')
+//cy.get('app-header__logo').should('have.text', 'National Jewish Health')
+
 
 //assert if Global Search box is displayed
-        cy.get('#lblHeaderSearch').should('have.text', 'Search the site:')
-        cy.get('#txtHeaderSearchBox').type('legislative')
-        cy.get('#btnHeaderSearch').contains('Search').click()
-        cy.wait(6000)
+        cy.get('.app-header__quick-nav-search').click()
+        cy.wait(2000)
+           cy.get('#appHeader__searchInput').type('test')
+        cy.get('button.btn.btn-sm.btn-blue--700.app-header__search-submit').click()
+          cy.wait(6000)
 
 // Successful Search Results page
-        cy.get('div.row').contains('Search Results')
-       // cy.get('input.search-input').contains('legislative')
+        cy.get('header.subpage__header').contains('Search')
+        cy.get('div.rich-text').contains('This is a search landing page')
 
-        //cy.get('#inputSearchBox').should('have.text', 'legislative')
-       
-  
- 
+        
           
 })
 

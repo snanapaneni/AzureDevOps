@@ -1,0 +1,17 @@
+{
+    "defaultCommandTimeout":8000,
+    "pageLoadTimeout":30000,
+
+    "viewportWidth": 2000,
+    "viewportHeight": 1300,
+    "chromeWebSecurity": false,
+    "supportFile": "./cypress/integration/cypress/support/index.js",
+
+    "env" :
+    {
+        "url": "https://rahulshettyacademy.com"
+    }
+
+    } 
+
+

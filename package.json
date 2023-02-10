@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:report": "cypress run"
+    "cy:report": "cypress run",
+    "cy:OslerSearch": "cypress run --spec cypress/integration/AzureDevopsIntegration/Osler/OslerSearch.js"
   },
  
   "author": "Sireesha",

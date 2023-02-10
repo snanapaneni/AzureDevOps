@@ -6,10 +6,7 @@
   "scripts": {
     "cy:report": "cypress run"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/snanapaneni/cypress.git"
-  },
+ 
   "author": "Sireesha",
   "license": "ISC",
   "devDependencies": {

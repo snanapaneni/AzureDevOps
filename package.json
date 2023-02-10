@@ -4,18 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-        "cy:report": "cypress run"
-      },
-  
+    "cy:report": "cypress run"
+  },
   "repository": {
-        "type": "git",
-        "url": "https://github.com/snanapaneni/cypress.git"
-      },
-
+    "type": "git",
+    "url": "https://github.com/snanapaneni/cypress.git"
+  },
   "author": "Sireesha",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.6.0",
+    "cypress": "^8.7.0",
     "cypress-iframe": "^1.0.1"
   }
 }

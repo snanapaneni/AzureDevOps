@@ -1,11 +1,11 @@
 {
-  "name": "automation",
+  "name": "cypressautomation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+        "cy:report": "cypress run"
+      },
   "author": "Sireesha",
   "license": "ISC",
   "devDependencies": {

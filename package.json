@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cy:report": "cypress run",
-    "cy:OslerSearch": "cypress run --spec cypress/integration/AzureDevopsIntegration/Osler/OslerSearch.js"
+    "cy:OslerSearch": "cypress run --spec cypress/integration/AzureDevopsIntegration/Osler/*.js"
   },
- 
   "author": "Sireesha",
   "license": "ISC",
   "devDependencies": {
